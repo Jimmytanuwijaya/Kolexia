@@ -15,6 +15,7 @@ Repository ini digunakan untuk membuat StartUp Kolexia. Adapun yang harus diketa
 POIN KE-9 ITU WAJIB DILAKUKAN..!!!!
 
 PEMBAGIAN KERJA DIANTARANYA :
+
 1. Steven Handoko : Ide dan Design, Coding(Optional)
 2. Frendy : Ide dan Design, Coding, Main Program
 3. Jimmy : Ide dan Design, Coding, Main Program
