@@ -10,5 +10,9 @@ Repository ini digunakan untuk membuat StartUp Kolexia. Adapun yang harus diketa
 6. Poin No. 5 dimaksudkan untuk sementara saja, berhubung tidak semuanya mahir dalam CodeIgniter. Jadi diharapkan nantinya semuanya mahir dalam CodeIgniter untuk kedepannya.
 7. Untuk Referensi PHP : http://it-ebooks.info/book/409/
 8. Untuk Referensi cara membuat startup : Film Social Network
+9. Setiap harinya, setiap anggota harus melakukan Scrum daily. Dan isinya adalah Apa yang dilakukan kemarin, Hari ini mengerjakan apa, dan apa yang menjadi kendala dalam pengerjaan hari ini. Ditulis dalam sebuah NOTEPAD.
+
+POIN KE-9 ITU WAJIB DILAKUKAN..!!!!
+
 
 GO GO GO, Kolexia!! Keep the Spirit for the Success!!!
