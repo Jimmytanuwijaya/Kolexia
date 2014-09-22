@@ -1,6 +1,6 @@
 <!--Home Page Content-->
 <a href="" class="cartsite"><div id="shopcart">
-	<img src="images/cart.png" width="50px" height="50px" class="cart">
+	<img src="assets/images/cart.png" width="50px" height="50px" class="cart">
 </div></a>
 
 <div id="log-site">
@@ -18,21 +18,21 @@
 <div id="box">
 	<div id="content">
 		<div class = "image">
-			<img src="images/sandal.jpg" alt="imagesandal" class="sandal" />
+			<img src="assets/images/sandal.jpg" alt="imagesandal" class="sandal" />
 		</div>
 		<div id = "desc">
 				<div class="circle">
-					<img src="images/face.jpg" class="face" />	
+					<img src="assets/images/face.jpg" class="face" />	
 				</div>
 				<p id="desc-facename">Jessie</p>
 				<p id="desc-faceshop">BooBoo Shop</p>
 				<p id="desc-faceaddr">61 Avenue Street</p>
 			<div class="nav-descface"></div>
 			<ul class="list-item" type="none">
-				<li class="list1"><img src="images/1.jpg" width="90px" height="90px"></li>
-				<li class="list2"><img src="images/2.jpg" width="90px" height="90px"></li>
-				<li class="list3"><img src="images/3.jpg" width="90px" height="90px"></li>
-				<li class="list4"><img src="images/4.jpg" width="90px" height="90px"></li>
+				<li class="list1"><img src="assets/images/1.jpg" width="90px" height="90px"></li>
+				<li class="list2"><img src="assets/images/2.jpg" width="90px" height="90px"></li>
+				<li class="list3"><img src="assets/images/3.jpg" width="90px" height="90px"></li>
+				<li class="list4"><img src="assets/images/4.jpg" width="90px" height="90px"></li>
 			</ul>
 			<div class="nav-imglist"></div>
 		</div>
