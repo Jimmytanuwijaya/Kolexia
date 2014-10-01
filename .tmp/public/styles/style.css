@@ -11,15 +11,9 @@
 			margin-top: -50px;
 			margin-left: 15px;
 		}
-		.pd-line{
-			margin-top: 10px;
-		}
-		#pd{
-			margin-left: 19%;
-		}
-		.nav-pd1 .nav-pd2 .nav-pd3 .nav-pd4{
-			float:left;
-			position: relative;
+		.nav-pd1, .nav-pd2, .nav-pd3, .nav-pd4{
+			float: left;
+			padding-right: 20px;
 		}
 		.nav-pd1 h4, .nav-pd2 h4, .nav-pd3 h4, .nav-pd4 h4{
 			color: gray;
@@ -27,25 +21,10 @@
 		.nav-pd1 li, .nav-pd2 li, .nav-pd3 li, .nav-pd4 li{
 			margin: 5px 0;
 		}
-		.nav-pd2{
-			margin-left: 200px;
-			margin-top: -78px;
-		}
-		.nav-pd3{
-			margin-left: 400px;
-			margin-top: -124px;
-		}
-		.nav-pd4{
-			margin-left: 600px;
-			margin-top: -124px;
-		}
-		.tou{
-			float: right;
-		}
-		.tou td{
+		.pull-right td{
 			padding: 10px;
 		}
-		.tou #copy{
+		.pull-right #copy{
 			font-size: 13px;
 		}
 		#box{
