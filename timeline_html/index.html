@@ -1,0 +1,321 @@
+<html>
+<title>Facebook Timeline Design with jquery and CSS</title>
+<head>
+
+
+<style>
+body { background-color: #E7EBF2; font-family:arial; font-size:13px }
+#container, #containertop	{	width:860px; margin: 0 auto; 	}
+
+.borderclass { border:1px solid #A9B6D2; }
+.item {
+  width: 408px;
+  margin: 10px;
+  float: left;
+  margin-top:10px;
+  background-color:#ffffff;
+  border:solid 1px #B4BBCD;
+min-height:50px;
+text-align:justify;
+word-wrap:break-word; 
+}
+.topbox
+{
+margin: 10px;
+
+
+margin-top: 10px;
+background-color: white;
+border: solid 1px #B4BBCD;
+
+}
+
+
+.item div, .topbox div
+{
+padding:8px;	
+}
+.rightCorner { 
+    background-image: url("images/right.png");
+    display: block;
+    height: 15px;
+    margin-left: 408px;
+    margin-top: 8px;
+    padding: 0;
+    vertical-align: top;
+    width: 13px;
+z-index:2;
+
+	position: absolute;
+}
+.leftCorner{
+background-image: url("images/left.png");
+display: block;
+height: 15px;
+width: 13px;
+margin-left: -13px;
+margin-top: 8px;
+position: absolute;
+z-index:2;
+}
+#popup{ display: block; 
+ width: 408px;
+  float: left;
+  margin-top:10px;
+  background-color:#ffffff;
+  border:solid 1px #A9B6D2;
+  min-height:60px;
+  display:none;
+  position:absolute;
+  margin:10px;
+ }
+.Popup_rightCorner
+{
+background-image: url("images/right.png");
+    display: block;
+    height: 15px;
+    margin-left: 408px;
+    margin-top: 8px;
+    padding: 0;
+    vertical-align: top;
+    width: 13px;
+z-index:2;
+
+	position: absolute;
+}
+ #box
+{
+padding:8px;	
+
+}
+#update
+{
+width:100%;
+}
+
+ .timeline_container{
+                width: 16px;
+                text-align: center;
+                margin: 0 auto;
+				cursor:pointer;
+				    display: block;
+            }
+            .timeline{
+                                
+                margin: 0 auto;
+				 background-color:#e08989;
+    display: block;
+    float: left;
+    height: 100%;
+    left: 428px;
+    margin-top: 10px;
+    position: absolute;
+    width: 4px;
+            }
+            .timeline:hover{
+                cursor: pointer;
+				margin: 0 auto;
+            }
+            .timeline div.plus{
+                width: 14px;
+                height: 14px;
+               
+                position: relative;
+                left: -6px;
+            }
+			#update_button {
+background-color: #cc0000;
+color: white;
+font-weight: bold;
+padding: 5px;
+border: solid 1px #333;
+margin-top: 5px;
+cursor: pointer;
+}
+.shade{box-shadow:0px 0px 18px #000;-moz-box-shadow:0px 0px 18px #000;-webkit-box-shadow:0px 0px 18px #000}
+h1{ font-family: 'Georgia',Times New Roman; }
+.timeline:hover
+{
+cursor: none;
+}
+.deletebox
+{
+font-weight:bold;
+float:right;
+text-decoration:none;
+margin:8px 10px 8px 10px;
+color:#cc0000
+}
+</style>
+</head>
+<body>
+ <div id="containertop" >
+ <div id='profile' style='margin:10px;height:100px'>
+ <img src='http://www.gravatar.com/avatar.php?gravatar_id=7a9e87053519e0e7a21bb69d1deb6dfe&s=100' style='border:solid 2px #cc0000;float:left;' alt='Srinivas Tamada'/>
+ <h1 style='margin-left:120px'>Facebook Timeline Design using Jquery</h1>
+<h2 style='margin-left:120px'>Srinivas Tamada </h2>
+ <h4 style='margin-left:120px'>Tutorial Link <a href='http://9lessons.info'>Click Here</a> - Follow me <a href='http://9lessons.info'>@9lessons</a> - Add Me <a href='http://fb.com/srinivas.tamada'>fb.com/srinivas.tamada</a> </h4>
+
+ </div>
+
+</div>
+  <div id="container">
+    
+       <div class="timeline_container">
+            <div class="timeline">
+                <div class="plus"></div>
+            </div>
+        </div>
+	 
+	  <div class="item ">
+           <a href='#' class='deletebox'>X</a>
+	  		<div>In QA environment there is no proper alerts data for refund messages,  we tested with these store numbers 9750 and 9765. Cloud  you please explain how to create new AD-HOC alert.  
+</div>
+	  	</div>
+<div class="item ">
+ <a href='#' class='deletebox'>X</a>
+	  	<div>Thurisind was king of the Gepids, an East Germanic Gothic people, from c. 548 to 560. He was the penultimate Gepid king, and succeeded King Elemund by staging a coup d'Ã©tat and forcing the king's son into exile. Thurisind's kingdom, known as Gepidia, was located in Central Europe and had its centre in Sirmium, a former Roman city on the Danube River. His reign was marked by multiple wars with the Lombards, a Germanic people who had arrived in the former Roman province of Pannonia under the leadership of their king, Audoin. Thurisind also had to face the hostility of the Byzantine Empire, which was resentful of the Gepid takeover of Sirmium and anxious to diminish Gepid power in the Pannonian Basin, a plain covering most of modern Hungary and partly including the bordering states. The Byzantines' plans to reduce the Gepids' power took effect when Audoin decisively defeated Thurisind in 551 or 552. The Byzantine Emperor Justinian forced a peace accord on both leaders so that equilibrium in the Pannonian Basin could be sustained. Thurisind lost his eldest son, Turismod, in the Battle of </div>		
+	  </div>
+	  <div class="item ">
+ <a href='#' class='deletebox'>X</a>
+	  		<div>Thurisind was king of the Gepids, an East Germanic Gothic people, from c. 548 to 560. He was the penultimate Gepid king, and succeeded King Elemund by staging a coup d'Ã©tat and forcing the king's son into exile. Thurisind's kingdom, known as Gepidia, was located in Central Europe and had its centre in Sirmium, a former Roman city on the Danube River. His reign was marked by multiple wars with the Lombards, a Germanic people who had arrived in the former Roman province of Pannonia under the leadership of their king, Audoin. Thurisind also had to face the hostility of the Byzantine Empire, which was resentful of the Gepid takeover of Sirmium and anxious to diminish Gepid power in the Pannonian Basin, a plain covering most of modern Hungary and partly including the bordering states. The Byzantines' plans to reduce the Gepids' power took effect when Audoin decisively defeated Thurisind in 551 or 552. The Byzantine Emperor Justinian forced a peace accord on both leaders so that equilibrium in the Pannonian Basin could be sustained. Thurisind lost his eldest son, Turismod, in the Battle of Asfeld, where the prince was killed by Alboin, son of Audoin. In about 560, Thurisind died and was succeeded by his remaining son Cunimund, who was killed by Alboin in 567. Cunimund's death marked the end of the Gepid Kingdom and the beginning of the conquest of their territories by the Lombards' allies, the Avars, a nomadic people migrating from the Eurasian Steppe. (more...) Thurisind was king of the Gepids, an East Germanic Gothic people, from c. 548 to 560. He was the penultimate Gepid king, and succeeded King Elemund by staging a coup d'Ã©tat and forcing the king's son into exile. Thurisind's kingdom, known as Gepidia, was located in Central Europe and had its centre in Sirmium, a former Roman city on the Danube River. His reign was marked by multiple wars with the Lombards, a Germanic people who had arrived in the former Roman province of Pannonia under the leadership of their king, Audoin. Thurisind also had to face the hostility of the Byzantine Empire, which was resentful of the Gepid takeover of Sirmium and anxious to diminish Gepid power in the Pannonian Basin, a plain covering most of modern Hungary and partly including the bordering states. The Byzantines' plans to reduce the Gepids' power took effect when Audoin decisively defeated Thurisind in 551 or 552. The Byzantine Emperor Justinian forced a peace accord on both leaders so that equilibrium in the Pannonian Basin could be sustained. Thurisind lost his eldest son, Turismod, in the Battle of Asfeld, where the prince was killed by Alboin, son of Audoin. In about 560, Thurisind died and was succeeded by his remaining son Cunimund, who was killed by Alboin in 567. Cunimund's death marked the end of the Gepid Kingdom and the beginning of the conquest of their territories by the Lombards' allies, the Avars, a nomadic people migrating from the Eurasian Steppe. (more...) Thurisind was king of the Gepids, an East Germanic Gothic people, from c. 548 to 560. He was the penultimate Gepid king, and succeeded King Elemund by staging a coup d'Ã©tat and forcing the king's son into exile. Thurisind's kingdom, known as Gepidia, was located in Central Europe and had its centre in Sirmium, a former Roman city on the Danube River. His reign was marked by multiple wars with the Lombards, a Germanic people who had arrived in the former Roman province of Pannonia under the leadership of their king, Audoin. Thurisind also had to face the hostility of the Byzantine Empire, which was resentful of the Gepid takeover of Sirmium and anxious to diminish Gepid power in the Pannonian Basin, a plain covering most of modern Hungary and partly including the bordering states. The Byzantines' plans to reduce the Gepids' power took effect when Audoin decisively defeated Thurisind in 551 or 552. The Byzantine Emperor Justinian forced a peace accord on both leaders so that equilibrium in the Pannonian Basin could be sustained. Thurisind lost his eldest son, Turismod, in the Battle of Asfeld, where the prince was killed by Alboin, son of Audoin. In about 560, Thurisind died and was succeeded by his remaining son Cunimund, who was killed by Alboin in 567. Cunimund's death marked the end of the Gepid Kingdom and the beginning of the conquest of their territories by the Lombards' allies, the Avars, a nomadic people migrating from the Eurasian Steppe. (more...) Thurisind was king of the Gepids, an East Germanic Gothic people, from c. 548 to 560. He was the penultimate Gepid king, and succeeded King Elemund by staging a coup d'Ã©tat and forcing the king's son into exile. Thurisind's kingdom, known as Gepidia, was located in Central Europe and had its centre in Sirmium, a former Roman city on the Danube River. His reign was marked by multiple wars with the Lombards, a Germanic people who had arrived in the former Roman province of Pannonia under the leadership of their king, Audoin. Thurisind also had to face the hostility of the Byzantine Empire, which was resentful of the Gepid takeover of Sirmium and anxious to diminish Gepid power in the Pannonian Basin, a plain covering most of modern Hungary and partly including the bordering states. The Byzantines' plans to reduce the Gepids' power took effect when Audoin decisively defeated Thurisind in 551 or 552. The Byzantine Emperor Justinian forced a peace accord on both leaders so that equilibrium in the Pannonian Basin could be sustained. Thurisind lost his eldest son, Turismod, in the Battle of Asfeld, where the prince was killed by Alboin, son of Audoin. In about 560, Thurisind died and was succeeded by his remaining son Cunimund, who was killed by Alboin in 567. Cunimund's death marked the end of the Gepid Kingdom and the beginning of the conquest of their territories by the Lombards' allies, the Avars, a nomadic people migrating from the Eurasian Steppe. (more...) </div>
+	  </div>
+	  
+	  <div class="item">
+ <a href='#' class='deletebox'>X</a>
+	  		<div>Thurisind was king of the Gepids, an East Germanic Gothic people, from c. 548 to 560. He was the penultimate Gepid king, and succeeded King Elemund by staging a coup d'ÃƒÂ©tat and forcing the king's son into exile. Thurisind's kingdom, known as Gepidia, was located in Central Europe and had its centre in Sirmium, a former Roman
+		Thurisind was king of the Gepids, an East Germanic Gothic people, from c. 548 to 560. He was the penultimate Gepid king, and succeeded King Elemund by staging a coup d'ÃƒÂ©tat and forcing the king's son into exile. Thurisind's kingdom, known as Gepidia, was located in Central Europe and had its centre in Sirmium, a former Roman</div>		
+	  	</div>
+	  <div class="item">
+ <a href='#' class='deletebox'>X</a>
+	  		<div>Thurisind was king of the Gepids, an East Germanic Gothic people, from c. 548 to 560. He was the penultimate Gepid king, and succeeded King Elemund by staging a coup d'ÃƒÂ©tat and forcing the king's son into exile. Thurisind's kingdom, known as Gepidia, was located in Central Europe and had its centre in Sirmium, a former Roman</div>		
+	  	</div>
+	  <div class="item">
+ <a href='#' class='deletebox'>X</a>
+	  		<div>
+	  			
+	Thurisind was king of the Gepids, an East Germanic Gothic people, from c. 548 to 560. He was the penultimate Gepid king, and succeeded King Elemund by staging a coup d'ÃƒÂ©tat and forcing the king's son into exile. Thurisind's kingdom, known as Gepidia, was located in Central Europe and had its centre in Sirmium, a former Roman
+	  		</div>		
+	  </div>
+	  
+	 <div id="popup" class='shade'>
+	 		
+		<div class="Popup_rightCorner" >	</div>
+		<div id='box'>
+		<b>What's Up?</b><br/>
+		<textarea id='update'></textarea>
+		<input type='submit' value=' Update ' id='update_button'/>
+         </div>
+	
+	</div>
+	</div>
+	
+		
+	</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="jquery.masonry.min.js"></script>
+
+<script>
+$(function(){
+
+
+function Arrow_Points()
+{ 
+var s = $('#container').find('.item');
+$.each(s,function(i,obj){
+var posLeft = $(obj).css("left");
+$(obj).addClass('borderclass');
+if(posLeft == "0px")
+{
+html = "<span class='rightCorner'></span>";
+$(obj).prepend(html);			
+}
+else
+{
+html = "<span class='leftCorner'></span>";
+$(obj).prepend(html);
+}
+});
+}
+
+$('.timeline_container').mousemove(function(e)
+{
+var topdiv=$("#containertop").height();
+var pag= e.pageY - topdiv-26;
+$('.plus').css({"top":pag +"px", "background":"url('images/plus.png')","margin-left":"1px"});}).
+mouseout(function()
+{
+$('.plus').css({"background":"url('')"});
+});
+	
+	
+				
+$("#update_button").live('click',function()
+{
+var x=$("#update").val();
+$("#container").prepend('<div class="item"><a href="#" class="deletebox">X</a><div>'+x+'</div></div>');
+
+//Reload masonry
+$('#container').masonry( 'reload' );
+
+$('.rightCorner').hide();
+$('.leftCorner').hide();
+Arrow_Points();
+
+$("#update").val('');
+$("#popup").hide();
+return false;
+});
+
+// Divs
+$('#container').masonry({itemSelector : '.item',});
+Arrow_Points();
+  
+//Mouseup textarea false
+$("#popup").mouseup(function() 
+{
+return false
+});
+  
+$(".timeline_container").click(function(e)
+{
+var topdiv=$("#containertop").height();
+$("#popup").css({'top':(e.pageY-topdiv-33)+'px'});
+$("#popup").fadeIn();
+$("#update").focus();
+
+	
+});  
+
+
+$(".deletebox").live('click',function()
+{
+if(confirm("Are your sure?"))
+{
+$(this).parent().fadeOut('slow');  
+//Remove item
+$('#container').masonry( 'remove', $(this).parent() );
+//Reload masonry
+$('#container').masonry( 'reload' );
+$('.rightCorner').hide();
+$('.leftCorner').hide();
+Arrow_Points();
+}
+return false;
+});
+
+
+
+//Textarea without editing.
+$(document).mouseup(function()
+{
+$('#popup').hide();
+
+});
+ 
+  
+});
+</script>
+
+</body>
+</html>

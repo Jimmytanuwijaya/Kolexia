@@ -1,0 +1,179 @@
+		#pu .nav-pu{
+			height: 100px;
+			background-color: #FFCC00;
+		}
+		.logo{
+			margin-top: -40px;
+			margin-left: 15px;s
+		}
+		.logo-desc{
+			color: #500000;
+			margin-top: -50px;
+			margin-left: 15px;
+		}
+		.pd-line{
+			margin-top: 10px;
+		}
+		#pd{
+			margin-left: 19%;
+		}
+		.nav-pd1 .nav-pd2 .nav-pd3 .nav-pd4{
+			float:left;
+			position: relative;
+		}
+		.nav-pd1 h4, .nav-pd2 h4, .nav-pd3 h4, .nav-pd4 h4{
+			color: gray;
+		}
+		.nav-pd1 li, .nav-pd2 li, .nav-pd3 li, .nav-pd4 li{
+			margin: 5px 0;
+		}
+		.nav-pd2{
+			margin-left: 200px;
+			margin-top: -78px;
+		}
+		.nav-pd3{
+			margin-left: 400px;
+			margin-top: -124px;
+		}
+		.nav-pd4{
+			margin-left: 600px;
+			margin-top: -124px;
+		}
+		.tou{
+			float: right;
+		}
+		.tou td{
+			padding: 10px;
+		}
+		.tou #copy{
+			font-size: 13px;
+		}
+		#box{
+			margin-top: 5px;
+			background-color: #F0F0F0;
+			padding-bottom: 5px;
+			height: 400px;
+		}
+		#content{
+			background-color: #B0B0B0;
+			width: 690px;
+			height: 405px;
+			padding-right: 20px;
+			border-right: 1px dotted black;
+		}
+		.nav-imglist{
+			float: right;
+			height: 100%;
+			width: 20%;
+			margin-top:-405px;
+			background: -webkit-linear-gradient(right, gray,black ); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(right, gray,black ); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(right, gray,black ); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(right, gray,black ); /* Standard syntax */
+			opacity: 0.09;
+		}
+		.list-item{
+			margin-top: -392px;
+			margin-left:80%;
+		}
+		.face {
+			margin-left: 5px;
+			width: 110px;
+			height: 110px;
+			-moz-border-radius: 100px;
+			-webkit-border-radius: 100px;
+			border-radius: 100px;
+			padding-top: 6px;
+		}
+		#shopcart{
+			border-left: 1px solid gray;
+			height: 100px;
+			margin-right: 15px;
+			float: right;
+			margin-top: -100px;
+			background-repeat: no-repeat;
+		}
+		p#desc-facename, p#desc-faceshop, p#desc-faceaddr{
+			color: white;
+		}
+		p#desc-facename{
+			font-size:20px; 
+			font-family:Georgia, Verdana, Times New Roman; 
+			margin-left: 200px;
+			margin-top: -100px;
+		}
+		p#desc-faceshop{
+			font-size:15px; 
+			margin-left: 230px;
+			font-family:Georgia, Verdana, Times New Roman; 
+		}
+		p#desc-faceaddr{
+			font-size:15px; 
+			margin-left: 200px;
+			font-family:Georgia, Verdana, Times New Roman; 
+		}
+		#reg-site{
+			width: 45%;
+			float: right;
+			margin-top: -420px;
+		}
+		.regsite{
+			margin-top: 100px;
+			margin-left: 50px;
+		}
+		._sign{
+			float: left;
+			font-family: Georgia, Verdana, Times New Roman; 
+			color: #500000;
+		}
+		.tbl-signup td{
+			padding-bottom: 5px;
+		}
+		.lbl{
+			padding-right: 50px;
+		}
+		.sign-up{
+			margin-top: 50px;
+		}
+		#log-site{
+			float: right;
+			width: 550px;
+			margin-top: -100px;
+		}
+		.login{
+			float: right;
+			margin-right: 100px;
+			margin-top: -23px;
+		}
+		.tbl-login td{
+			padding-right: 40px;
+		}
+		#log-site h3{
+			font-family: Georgia, Verdana, Times New Roman; 
+			color: #500000;
+		}
+		.cart{
+			padding-left:20px;
+			padding-top:30px;
+		}
+		.image{
+			width: 720px;
+			height: 275px;
+		}
+		.image img{
+			width: 710px;
+			height: 405px;
+		}
+		#desc{
+			width: 710px;
+		}
+		.nav-descface{
+			width: 710px;
+			height: 130px;
+			background: -webkit-linear-gradient(right, gray,black ); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(right, gray,black ); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(right, gray,black ); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(right, gray,black ); /* Standard syntax */
+			opacity: 0.09;
+			margin-top: -122px;
+		}
