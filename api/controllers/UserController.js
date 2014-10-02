@@ -18,22 +18,44 @@ module.exports = {
 			title: req.param('title')
 		}
 
-		User.create(userObj, function userCreated(err,user) {
-			//If there's an error
-			if(err){
-				console.log(err);
-				req.session.flash = {
-					err: err
-				}
+		User.create(userObj, function userCreated(err, user) {
 
-				return res.redirect('../../');
-			}
+      // // If there's an error
+      // if (err) return next(err);
 
-			//after successfully creating the user
-			//redirect to the show action
-			res.redirect('user/show/'+user.id);
-		});
-	},
+      if (err) {
+        console.log(err);
+        req.session.flash = {
+          err: err
+        }
+
+        // If error redirect back to sign-up page
+        return res.redirect('../../');
+      }
+
+      // Log user in
+      req.session.authenticated = true;
+      req.session.User = user;
+
+      // Change status to online
+      user.online = true;
+      user.save(function(err, user) {
+        if (err) return next(err);
+
+      // add the action attribute to the user object for the flash message.
+      user.action = " signed-up and logged-in."
+
+      // Let other subscribed sockets know that the user was created.
+      User.publishCreate(user);
+
+        // After successfully creating the user
+        // redirect to the show action
+        // From ep1-6: //res.json(user); 
+
+        res.redirect('/user/show/' + user.id);
+      });
+    });
+  },
 
 	show: function(req, res, next) {
     User.findOne(req.param('id'), function foundUser(err, user) {
@@ -73,23 +95,23 @@ module.exports = {
   // process the info from edit view
   update: function(req, res, next) {
 
-    /*if (req.session.User.admin) {
+    if (req.session.User.admin) {
+      
+      var x = false;
+      if(req.param('admin')=="on") x = true;
       var userObj = {
-			username: req.param('username'),
-			password: req.param('password'),
-			confirmation: req.param('confirmation'),
 			name: req.param('name'),
 			email: req.param('email'),
-			title: req.param('title')
-		}
-    } else {*/
+			title: req.param('title'),
+      admin: x
+		  }
+     } else  {
       var userObj = {
 			name: req.param('name'),
 			title: req.param('title'),
 			email: req.param('email')
-		}
-    //}
-
+		  }
+    }
     User.update(req.param('id'), userObj, function userUpdated(err) {
       if (err) {
         return res.redirect('/user/edit/' + req.param('id'));
@@ -110,13 +132,13 @@ module.exports = {
         if (err) return next(err);
 
         // Inform other sockets (e.g. connected sockets that are subscribed) that this user is now logged in
-        /*User.publishUpdate(user.id, {
+        User.publishUpdate(user.id, {
           name: user.name,
           action: ' has been destroyed.'
-        });*/
+        });
 
         // Let other sockets know that the user instance was destroyed.
-        //User.publishDestroy(user.id);
+        User.publishDestroy(user.id);
 
       });        
 

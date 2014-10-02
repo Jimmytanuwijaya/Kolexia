@@ -1,3 +1,10 @@
+<% if (!session.authenticated) { %>
+<div class="container">
+<div class="navbar navbar-fixed-top" id = "nav-signin">
+	<a href="session/login" class="btn btn-success navbar-btn navbar-right">Sign in</a>
+</div>
+</div>
+ <% } %>
 <div class = "container">
 	<table class = "t-desc">
 	<tr>
@@ -23,7 +30,8 @@
 			</div>
 		</td>
 		<td>
-			<div class = "c-right">
+		<% if (!session.authenticated) { %>
+     		<div class = "c-right">
 				<h3 class="_sign">Sign Up for Free</h3>
 				<form action="user/create" method="post" class="regsite">
 					<div class="control-group">
@@ -52,6 +60,8 @@
 					<input type="hidden" name="_csrf" value="<%= _csrf %>" />
 				</form>
 			</div>
+		<% } %>
+			
 		</td>
 	</tr>
 	</table>

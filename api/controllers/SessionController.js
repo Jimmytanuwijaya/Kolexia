@@ -75,7 +75,7 @@ module.exports = {
 				req.session.User = user;
 
 				// Change status to online
-				/*user.online = true;
+				user.online = true;
 				user.save(function(err, user) {
 					if (err) return next(err);
 
@@ -96,15 +96,15 @@ module.exports = {
 
 					//Redirect to their profile page (e.g. /views/user/show.ejs)
 					res.redirect('/user/show/' + user.id);
-				});*/
-				res.redirect('/user/show/' + user.id);
+				});
+				//res.redirect('/user/show/' + user.id);
 			});
 		});
 	},
 
 	destroy: function(req, res, next) {
 
-		/*User.findOne(req.session.User.id, function foundUser(err, user) {
+		User.findOne(req.session.User.id, function foundUser(err, user) {
 
 			var userId = req.session.User.id;
 
@@ -127,7 +127,7 @@ module.exports = {
 					req.session.destroy();
 
 					// Redirect the browser to the sign-in screen
-					res.redirect('/session/login');
+					res.redirect('/');
 				});
 			} else {
 
@@ -135,14 +135,14 @@ module.exports = {
 				req.session.destroy();
 
 				// Redirect the browser to the sign-in screen
-				res.redirect('/session/login');
+				res.redirect('/');
 			}
-		});*/
-		// Wipe out the session (log out)
+		});
+		/*// Wipe out the session (log out)
 				req.session.destroy();
 
 		// Redirect the browser to the sign-in screen
 				res.redirect('/session/login');
-	}
+	*/}
 };
 

@@ -63,6 +63,12 @@
 			margin-left: 200px;
 			font-family:Georgia, Verdana, Times New Roman; 
 		}
+		.navbar-brand{
+			margin-top: -10px;
+		}
+		#nav-signin{
+			margin-right: 180px;
+		}
 		._sign{
 			font-family: Georgia, Verdana, Times New Roman; 
 			color: #500000;

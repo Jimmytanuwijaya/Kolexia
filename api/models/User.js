@@ -25,7 +25,7 @@ module.exports = {
   		required: true
   	},
 
-	email: {
+	 email: {
   		type: 'string',
   		email: true,
   		required: true,
@@ -35,9 +35,31 @@ module.exports = {
   	title: {
   		type: 'string',
   		required:true
-  	}
+  	},
 
+    online: {
+      type: 'boolean',
+      defaultsTo: false
+    },
+
+    admin: {
+      type: 'boolean',
+      defaultsTo: false
+    },
   },
+
+
+  beforeValidation: function (values, next) {
+    if (typeof values.admin !== 'undefined') {
+      if (values.admin === 'unchecked') {
+        values.admin = false;
+      } else  if (values.admin[1] === 'on') {
+        values.admin = true;
+      }
+    }
+     next();
+  },
+
 
   beforeCreate: function (values, next) {
 
@@ -49,7 +71,7 @@ module.exports = {
     require('bcrypt').hash(values.password, 10, function passwordEncrypted(err, encryptedPassword) {
       if (err) return next(err);
       values.encryptedPassword = encryptedPassword;
-      // values.online= true;
+      values.online= true;
       next();
     });
   }
