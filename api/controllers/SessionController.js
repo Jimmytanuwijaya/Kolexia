@@ -37,14 +37,15 @@ module.exports = {
 		// Try to find the user by there email address. 
 		// findOneByEmail() is a dynamic finder in that it searches the model by a particular attribute.
 		// User.findOneByEmail(req.param('email')).done(function(err, user) {
-		User.findOneByEmail(req.param('email'), function foundUser(err, user) {
+		// Find username or email
+		User.findOne({ or : [ {username : req.param('email')}, { email: req.param('email') } ] }, function foundUser(err, user) {
 			if (err) return next(err);
 
 			// If no user is found...
 			if (!user) {
 				var noAccountError = [{
 					name: 'noAccount',
-					message: 'The email address ' + req.param('email') + ' not found.'
+					message: 'The email address / username ' + req.param('email') + ' not found.'
 				}]
 				req.session.flash = {
 					err: noAccountError
