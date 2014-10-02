@@ -1,2 +1,58 @@
-<br>
-<h1>This is our Home Page<h1>
+<div class = "container">
+	<table class = "t-desc">
+	<tr>
+		<td>
+			<div class="c-left">
+				<div class = "image">
+					<img src="images/sandal.jpg" alt="imagesandal" class="sandal" />
+				</div>
+				<div id = "desc">
+					<div class="circle">
+						<img src="images/face.jpg" class="face" />	
+					</div>
+					<p id="desc-facename">Jessie</p>
+					<p id="desc-faceshop">BooBoo Shop</p>
+					<p id="desc-faceaddr">61 Avenue Street</p>
+					<ul class="list-item" type="none">
+						<li class="list1"><img src="images/1.jpg" width="90px" height="90px"></li>
+						<li class="list2"><img src="images/2.jpg" width="90px" height="90px"></li>
+						<li class="list3"><img src="images/3.jpg" width="90px" height="90px"></li>
+						<li class="list4"><img src="images/4.jpg" width="90px" height="90px"></li>
+					</ul>
+				</div>
+			</div>
+		</td>
+		<td>
+			<div class = "c-right">
+				<h3 class="_sign">Sign Up for Free</h3>
+				<form action="user/create" method="post" class="regsite">
+					<div class="control-group">
+						<input type="text" class="form-control" placeholder="your username" name="username">
+					</div>
+					<div class="control-group">
+						<input type="password" class="form-control" placeholder="password" name="password" id="password">
+					</div>
+
+					<div class="control-group">
+						<input type="password" class="form-control" placeholder="password confirmation" name="confirmation">
+					</div>
+
+					<div class="control-group">
+						<input type="text" class="form-control" placeholder="your name" name="name">
+					</div>
+					
+					<div class="control-group">
+						<input type="text" class="form-control" placeholder="email address" name="email">
+					</div>
+
+					<div class="control-group">
+						<input type="text" class="form-control" placeholder="your title" name="title">
+					</div>
+					<input type="submit" class= "btn btn-lg btn-primary btn-block" value="Sign Up">
+					<input type="hidden" name="_csrf" value="<%= _csrf %>" />
+				</form>
+			</div>
+		</td>
+	</tr>
+	</table>
+</div>

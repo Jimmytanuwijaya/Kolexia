@@ -31,6 +31,8 @@ var jsFilesToInject = [
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
+  'js/jquery.js',
+  'js/jquery.validate.min.js',
   'js/**/*.js'
 ];
 

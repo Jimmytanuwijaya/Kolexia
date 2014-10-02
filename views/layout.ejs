@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>New Sails App</title>
+    <title>Kolexia</title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -42,7 +42,32 @@
   <body>
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-          <a href="/"> <img src="images/logo.png" width="150px" height="50px"></a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"> <img src="/images/logo.png" width="150px" height="50px"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <% if (session.authenticated) { %>
+              <li class="active"><a href="/user/show/<%= session.User.id %>"><%= session.User.name %> </a> </li>
+            <% } %>
+            <% if (session.authenticated && session.User.admin) { %>
+            <li><a href="/user">User Administration</a></li>
+            <% } %>
+          </ul>
+          <div class="navbar-right">
+            <% if (session.authenticated) { %>
+              <a class="btn btn-success navbar-btn navbar-right" href="/session/destroy">Sign Out</a>
+            <% } %>
+          </div>
+          <% if (!session.authenticated) { %>
+            <a href="session/login" class="btn btn-success navbar-btn navbar-right">Sign in</a>
+          <% } %>
+        </div>
       </div>
     </div>
     
@@ -155,13 +180,22 @@
 
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/jquery.js"></script>
     <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/JSXTransformer.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/customValidate.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.timeago.js"></script>
     <script src="/js/masonry.pkgd.js"></script>
     <script src="/js/masonry.pkgd.min.js"></script>
     <script src="/js/radiocheck.js"></script>
+    <script src="/js/react-with-addons.js"></script>
+    <script src="/js/react-with-addons.min.js"></script>
+    <script src="/js/react.js"></script>
+    <script src="/js/react.min.js"></script>
+    <script src="/js/require.js"></script>
     <script src="/js/socket.io.js"></script>
     <!--SCRIPTS END-->
   </body>

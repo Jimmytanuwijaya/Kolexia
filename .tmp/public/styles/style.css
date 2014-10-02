@@ -1,15 +1,5 @@
-		#pu .nav-pu{
-			height: 100px;
-			background-color: #FFCC00;
-		}
-		.logo{
-			margin-top: -40px;
-			margin-left: 15px;s
-		}
-		.logo-desc{
-			color: #500000;
-			margin-top: -50px;
-			margin-left: 15px;
+		body{
+			padding-top: 60px;
 		}
 		.nav-pd1, .nav-pd2, .nav-pd3, .nav-pd4{
 			float: left;
@@ -27,30 +17,6 @@
 		.pull-right #copy{
 			font-size: 13px;
 		}
-		#box{
-			margin-top: 5px;
-			background-color: #F0F0F0;
-			padding-bottom: 5px;
-			height: 400px;
-		}
-		#content{
-			background-color: #B0B0B0;
-			width: 690px;
-			height: 405px;
-			padding-right: 20px;
-			border-right: 1px dotted black;
-		}
-		.nav-imglist{
-			float: right;
-			height: 100%;
-			width: 20%;
-			margin-top:-405px;
-			background: -webkit-linear-gradient(right, gray,black ); /* For Safari 5.1 to 6.0 */
-			background: -o-linear-gradient(right, gray,black ); /* For Opera 11.1 to 12.0 */
-			background: -moz-linear-gradient(right, gray,black ); /* For Firefox 3.6 to 15 */
-			background: linear-gradient(right, gray,black ); /* Standard syntax */
-			opacity: 0.09;
-		}
 		.list-item{
 			margin-top: -392px;
 			margin-left:80%;
@@ -63,6 +29,12 @@
 			-webkit-border-radius: 100px;
 			border-radius: 100px;
 			padding-top: 6px;
+		}
+		.c-left{
+			padding-right: 40px;
+		}
+		.regsite .control-group, .form-signin .control-group{
+			padding-bottom: 10px;
 		}
 		#shopcart{
 			border-left: 1px solid gray;
@@ -91,41 +63,12 @@
 			margin-left: 200px;
 			font-family:Georgia, Verdana, Times New Roman; 
 		}
-		#reg-site{
-			width: 45%;
-			float: right;
-			margin-top: -420px;
-		}
-		.regsite{
-			margin-top: 100px;
-			margin-left: 50px;
-		}
 		._sign{
-			float: left;
 			font-family: Georgia, Verdana, Times New Roman; 
 			color: #500000;
 		}
 		.tbl-signup td{
-			padding-bottom: 5px;
-		}
-		.lbl{
-			padding-right: 50px;
-		}
-		.sign-up{
-			margin-top: 50px;
-		}
-		#log-site{
-			float: right;
-			width: 550px;
-			margin-top: -100px;
-		}
-		.login{
-			float: right;
-			margin-right: 100px;
-			margin-top: -23px;
-		}
-		.tbl-login td{
-			padding-right: 40px;
+			padding-bottom: 10px;
 		}
 		#log-site h3{
 			font-family: Georgia, Verdana, Times New Roman; 
@@ -137,7 +80,7 @@
 		}
 		.image{
 			width: 720px;
-			height: 275px;
+			height: 260px;
 		}
 		.image img{
 			width: 710px;
@@ -146,13 +89,9 @@
 		#desc{
 			width: 710px;
 		}
-		.nav-descface{
-			width: 710px;
-			height: 130px;
-			background: -webkit-linear-gradient(right, gray,black ); /* For Safari 5.1 to 6.0 */
-			background: -o-linear-gradient(right, gray,black ); /* For Opera 11.1 to 12.0 */
-			background: -moz-linear-gradient(right, gray,black ); /* For Firefox 3.6 to 15 */
-			background: linear-gradient(right, gray,black ); /* Standard syntax */
-			opacity: 0.09;
-			margin-top: -122px;
+		.btn{
+			margin-top: 10px;
+		}
+		.lbl{
+			padding-right: 50px;
 		}
